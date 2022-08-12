@@ -20,11 +20,11 @@ int main()
             {
                 min = j;
             }
-            if(min != i)
+        }
+        if(min != i)
             {
                 swap(arr[i], arr[min]);
             }
-        }
     }
     cout<<"your sorted list is : ";
     for(int i = 0; i < n; i++)
