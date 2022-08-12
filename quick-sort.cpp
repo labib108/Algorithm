@@ -2,10 +2,10 @@
 using namespace std;
 
 /*
-This function takes first element as pivot
-places the pivot element at its correct position
-places all smaller (smaller than pivot) to left of pivot
-places all greater elements to right of pivot
+This function takes last element as pivot
+# places the pivot element at its correct position
+# places all smaller (smaller than pivot) to left of pivot
+# places all greater elements to right of pivot
 lb ->> lower bound
 ub ->> upper bound
 */
@@ -25,9 +25,8 @@ int partition_array(int arr[], int lb, int ub)
     return (i + 1);
 }
 /*
-a[] --> Array to be sorted
-low --> Starting index
-high --> Ending index
+lb ->> lower bound
+ub ->> upper bound
 */
 void quick_sort(int arr[], int lb, int ub)
 {
