@@ -4,19 +4,19 @@ using namespace std;
 int main()
 {
     int n;
-    cout<<"Enter the number of element you want to add."<<endl;
-    cin>>n;
+    cout << "Enter the number of element you want to add." << endl;
+    cin >> n;
     int arr[n];
     for(int i = 0; i < n; i++)
     {
-        cin>>arr[i];
+        cin >> arr[i];
     }
     for(int i = 0; i < n - 1; i++ )
     {
         int min = i;
         for( int j = i + 1; j < n; j++)
         {
-            if(arr[j]<arr[min])
+            if(arr[j] < arr[min])
             {
                 min = j;
             }
@@ -26,11 +26,11 @@ int main()
                 swap(arr[i], arr[min]);
             }
     }
-    cout<<"your sorted list is : ";
+    cout << "Your sorted list is : ";
     for(int i = 0; i < n; i++)
     {
-        cout<<arr[i]<<" ";
+        cout << arr[i] << " ";
     }
-    cout<<endl;
+    cout << endl;
     return 0;
 }
