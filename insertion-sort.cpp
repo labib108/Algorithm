@@ -11,10 +11,13 @@ int main()
     {
         cin>>arr[i];
     }
+    // loop for N = 1 to N  = N.
+    //Unsorted list
     for(int i = 1; i < n; i++)
     {
         int temp = arr[i];
         int j = i-1;
+        //Loop for check item with sort list 
         while(j >= 0 && arr[j] > temp)
         {
             arr[j + 1] = arr[j];
